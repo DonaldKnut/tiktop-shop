@@ -23,7 +23,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     </div>
     <hr className="m-4" />
     <h5>Welcome to Dealo</h5>
-    <p>it's your time to Win Business Deals</p>
+    <p>it&apos;s your time to Win Business Deals</p>
     <a href={confirmLink}>Start Now</a>
     <Image src="/major_image3.png" alt="dealo logo" width={140} height={140} />
     <div>
