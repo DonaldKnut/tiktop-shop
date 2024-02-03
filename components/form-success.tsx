@@ -1,7 +1,7 @@
 import { CheckCircledIcon } from "@radix-ui/react-icons";
 
 interface FormSuccessProps {
-  message: string;
+  message?: string; // Make the message prop optional
 }
 
 export const FormSuccess = ({ message }: FormSuccessProps) => {
