@@ -1,0 +1,77 @@
+.button {
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: 53px;
+  z-index: 2;
+  right: 39px;
+}
+
+.menu {
+  width: 333px;
+  height: 590px;
+  background-color: rgb(237 114 51);
+  border-radius: 26px;
+  position: absolute;
+  z-index: 1;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.el {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(237 114 51);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.el:nth-of-type(2) {
+  position: absolute;
+  top: 50%; /* Adjust the top value as needed */
+  background-color: rgb(5, 4, 4);
+  transform: translateY(50%);
+}
+
+.perspective_text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+  transform-style: preserve-3d;
+}
+
+.perspective_text p:nth-of-type(2) {
+  position: absolute;
+  transform: rotateX(-90deg) translateY(10px);
+  transform-origin: bottom center;
+}
+
+.el:hover .perspective_text {
+  transform: rotateX(90deg);
+}
+
+/* .perspective_text p:nth-of-type(1) {
+  transform: translateY(-100%);
+} */
+
+@media (min-width: 880px) {
+  .button {
+    right: 166px;
+  }
+
+  .menu {
+    right: 159px;
+  }
+}
